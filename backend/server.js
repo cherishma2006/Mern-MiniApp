@@ -5,21 +5,21 @@ import { EmployeeApp } from './APIs/EmployeeAPI.js';
 import cors from "cors";
 
 const app=exp();
-app.use(
+/*app.use(
  cors({
     origin: ["http://localhost:5173"],
    }),
-   );
-/*app.use(
+   );*/
+app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://employee-week-6-3seju4efl-cognitiveking2007s-projects.vercel.app"
+      "mern-mini-app-wine.vercel.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
   })
-);*/
+);
 app.use(exp.json());
 app.use("/EmployeeAPI", EmployeeApp);
 //asign port

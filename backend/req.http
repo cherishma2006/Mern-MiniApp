@@ -1,0 +1,25 @@
+###Create Employee
+POST http://localhost:4000/EmployeeAPI/employees
+Content-Type:application/json
+
+{
+    "Name":"Lalith",
+    "email":"lalithratakonda@gmail.com",
+    "mobile":"998989797",
+    "designation":"Manager",
+    "companyName":"Infosys"
+}
+###Read all employees
+GET http://localhost:4000/EmployeeAPI/employees
+
+###Edit employee
+PUT http://localhost:4000/EmployeeAPI/employees/69ca2b350a0e4519068f9101
+Content-Type: application/json
+
+{
+    "designation": "Senior Manager",
+    "companyName": "Google"
+}
+
+###Delete Employee
+DELETE http://localhost:4000/EmployeeAPI/employees/69ca2b350a0e4519068f9101
